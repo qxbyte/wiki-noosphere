@@ -547,6 +547,38 @@ start up llm-wiki -path "~/Obsidian/LLM-Wiki"
 LLM_WIKI_VAULT 是 ~/Obsidian/LLM-Wiki，请运行 wiki-sort all 并总结报告。
 ```
 
+## 基于知识库提问
+
+安装并运行 `/llm-wiki-startup` 后，Claude Code 可以通过 `llm-wiki-obsidian` skill 按索引链路检索本地 Obsidian LLM Wiki。推荐在问题里明确写出“基于本地 LLM Wiki”或“基于我的 Obsidian 知识库”，这样 agent 会按 skill 中的“问答检索流程”工作：先读 `00-索引/Home.md`，再根据问题进入相关分类索引，只读取回答所需的链接笔记。
+
+Claude Code 命令示例：
+
+```text
+/llm-wiki-obsidian 请基于本地 LLM Wiki 回答：Claude Code 和 Codex 在本项目中的部署差异是什么？
+```
+
+```text
+/llm-wiki-obsidian 请基于我的 Obsidian LLM Wiki 检索：MarkItDown 导入资料后应该怎么整理？请说明依据来自哪些笔记。
+```
+
+自然语言示例：
+
+```text
+请使用 llm-wiki-obsidian，基于本地 LLM Wiki 回答：我应该如何维护 04-工具 目录？
+```
+
+```text
+基于我的 Obsidian LLM Wiki 检索一下 RAG 评估相关笔记，只读取必要的索引和链接笔记，并在回答末尾列出依据笔记。
+```
+
+Codex 中也可以用同样的自然语言触发：
+
+```text
+使用 llm-wiki-obsidian，基于本地 LLM Wiki 回答：wiki-sort 和 markitdown-input 的关系是什么？
+```
+
+如果刚导入新资料，先运行 `/wiki-sort`；如果想让回答覆盖全库健康状态或旧资料关系，先运行 `/wiki-sort all` 刷新检索地图和整理候选报告。
+
 ## Claude Code 和 Codex 的部署差异
 
 Claude Code:
