@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Wiki Obsidian"
+  short_description: "中文优先整理本地 LLM Wiki"
+  default_prompt: "使用 $llm-wiki-obsidian，把当前 Obsidian vault 整理成中文优先的本地 LLM Wiki 知识库。"

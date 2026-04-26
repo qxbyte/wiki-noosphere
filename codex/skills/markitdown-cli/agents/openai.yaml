@@ -1,0 +1,4 @@
+interface:
+  display_name: "MarkItDown CLI"
+  short_description: "Convert files to Markdown with MarkItDown."
+  default_prompt: "Use MarkItDown CLI to convert local files, URLs, or stdin into Markdown. If no destination is specified, write the generated .md file to ${LLM_WIKI_VAULT:-$HOME/Obsidian/LLM-Wiki}/markitdown-input/YYYYMMDD (current date folder); otherwise use the requested destination. Preserve source files and verify the output."

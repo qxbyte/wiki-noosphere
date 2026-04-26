@@ -1,0 +1,3 @@
+display_name: Wiki Sort
+short_description: 触发 Obsidian LLM Wiki 整理扫描
+default_prompt: "使用 /wiki-sort 扫描 markitdown-input，或使用 /wiki-sort all 扫描整个 Obsidian LLM Wiki。"

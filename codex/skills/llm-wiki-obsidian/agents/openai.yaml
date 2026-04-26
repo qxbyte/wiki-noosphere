@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Wiki Obsidian"
+  short_description: "用 Obsidian CLI 维护本地 LLM Wiki"
+  default_prompt: "Use $llm-wiki-obsidian to build or maintain a local LLM Wiki knowledge base with Claude Code and Obsidian CLI."
