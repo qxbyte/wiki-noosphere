@@ -21,7 +21,6 @@ wiki-noosphere/
 │   │   ├── llm-wiki-obsidian.md
 │   │   └── wiki-sort.md
 │   └── skills/
-│       ├── harness-hub/
 │       ├── llm-wiki-startup/
 │       ├── llm-wiki-obsidian/
 │       ├── markitdown-cli/
@@ -31,7 +30,6 @@ wiki-noosphere/
 │   │   ├── llm-wiki-startup.md
 │   │   └── markitdown-cli.md
 │   └── skills/
-│       ├── harness-hub/
 │       ├── llm-wiki-startup/
 │       ├── llm-wiki-obsidian/
 │       ├── markitdown-cli/
@@ -720,18 +718,6 @@ python "$WIKI_NOOSPHERE_HOME/scripts/convert.py" https://example.com/post --name
 - `--name custom-name`：为 URL、stdin 或复杂文件名指定输出文件名。
 - `--extension .pdf`：在输入缺少扩展名时提示文件类型。
 - `--use-plugins`：启用已安装的 MarkItDown 插件。
-
-### harness-hub
-
-用途：把需求按工程交付方式闭环，适合需要方案、实现、测试、复核和交付说明的开发任务。
-
-示例：
-
-```text
-使用 Harness Hub，帮我给 llm-wiki-indexer 增加一个 --strict 模式，并补充 README。
-```
-
-注意：只有当任务确实较复杂，或用户明确要求 Harness Hub 多角色模式时，才需要启用多角色/子代理协作。简单单文件改动不必强行使用。
 
 ## 索引器行为
 
