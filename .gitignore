@@ -9,4 +9,5 @@ build/
 *.log
 *.tmp
 .env
+.idea/
 
